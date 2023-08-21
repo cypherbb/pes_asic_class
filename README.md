@@ -81,7 +81,8 @@ Application(C code) -> Compiler(ISA) -> Assembler(Machine code) -> Processor
    ```
    ./a.out
    ```
-   ![gcc_sumNn_c](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/6ba8d493-d782-454f-8fb6-c442ade80b72)
+   ![Screenshot from 2023-08-21 19-35-30](https://github.com/cypherbb/pes_asic_class/assets/107348780/b15fa1ca-c420-451f-88db-2c379fb19aa4)
+
    <br>
 
 #### 2. Executing using RISC-V Complier<br>
@@ -243,8 +244,10 @@ int main()
 	return 0;
 }
 ```
-![code_unsigned](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/54928a06-d7ee-4ff9-bf84-739eae56800f)
-![exe_code_unsigned](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/00d452bd-bc10-4bf8-b6d9-cc7dfe77e2c9)
+
+![image](https://github.com/cypherbb/pes_asic_class/assets/107348780/65b37a2b-2a39-4b7e-bf13-5e7c1c68b75b)
+
+
 <br>
 
 #### 2. For Signed Numbers.<br>
@@ -266,8 +269,11 @@ int main()
 	return 0;
 }
 ```
-![code_signed](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/1a4058a2-4773-4549-9377-019b49aafcad)
-![exe_code_signed](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/9eb1d2ef-a5b0-4f8b-8eab-21b8a02820f6)
+
+![Screenshot from 2023-08-21 19-58-15](https://github.com/cypherbb/pes_asic_class/assets/107348780/3b01ed5e-1d63-4cb5-ab20-e9c02fbbd018)
+
+
+
 <br>
 End of Day 1.
 <br>
@@ -353,12 +359,14 @@ imm = immediaate value or offset<br>
 Because, all register has 5 bits of address, and **Total number of registers = 2^5 = 32 registers**.<br> 
 These 32 registers are named as x0 till x31.<br>
 and given some function.<br>
-![Screenshot from 2023-08-20 17-30-37](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/0339c4e1-6464-4f9f-bb1b-b751f1496135)
+![1](https://github.com/cypherbb/pes_asic_class/assets/107348780/10a04405-3d17-4727-8a8a-f309886b31b9)
+
 <br>
 
 ## ABI function calls
 Basic idea how we are going to call the function and execute the code.<br>
-![C_to_ASM](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/71436b7f-51ea-4837-930f-1572f4443caa)
+![image](https://github.com/cypherbb/pes_asic_class/assets/107348780/a95e73d6-23d0-4b4e-ac0a-2096c5e4063d)
+
 <br>
 
 #### Code(Contain's the function call(load))
@@ -395,9 +403,11 @@ loop:
 ```
 
 #### Executing the code<br>
-![code](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/d1e75c68-2cfc-47aa-ad91-763f39829efb)
+![Screenshot from 2023-08-21 20-00-33](https://github.com/cypherbb/pes_asic_class/assets/107348780/bbbfea85-31f9-46f4-959d-e1febb23b307)
+
 obj dump file<br>
-![obj_dump](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/ebd5dca0-cd85-4d9a-93ea-86946585af58)
+![Screenshot from 2023-08-21 20-02-42](https://github.com/cypherbb/pes_asic_class/assets/107348780/7e485f8c-cd21-4b8c-a2e7-958377fb38ce)
+
 We can see some of the ABI are updated according to our load.S code.
 <br>
 
@@ -418,11 +428,12 @@ chmod 777 rv32im.sh
 ```
 ./rv32im.sh
 ```
-![Screenshot from 2023-08-20 19-59-59](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/d555d95c-f668-43d6-9539-99acfaff54c0)
+
 <br>
 
 Flow of ecexuting the code on RISC-V CPU<br>
-![Screenshot from 2023-08-20 19-24-23](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/fd9b0343-b81f-4e64-b20f-74d34e42b28d)
+![image](https://github.com/cypherbb/pes_asic_class/assets/107348780/73c08bed-2297-43ad-bb5b-8cc684eadf50)
+
 
 
 <br>
