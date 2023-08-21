@@ -57,7 +57,7 @@ Application(C code) -> Compiler(ISA) -> Assembler(Machine code) -> Processor
 4. Processor only undersands o's and 1's.  
 
 ## Program to compute the Sum of Natural numbers till n.
-  #### Code -> sumNn.c
+  #### Code -> sum1ton.c
   ```
   #include <stdio.h>
 
