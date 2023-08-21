@@ -127,7 +127,7 @@ To find the number of instructions<br>
   
 
 
-  ![less_no_instru_dec](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/ff0f901b-d268-48b1-9bab-ea84dd065a03)
+ 
   <br>
   Got **11** instructions.
 * Usig **-Ofast** to compile.
