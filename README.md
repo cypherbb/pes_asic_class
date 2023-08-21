@@ -102,15 +102,15 @@ Application(C code) -> Compiler(ISA) -> Assembler(Machine code) -> Processor
    ```
    spike pk sum1ton.o
    ```
-   ![riscv_sumNn_c](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/7b4b9c2e-5dc8-4cf4-b203-28951304072b)
+ ![Screenshot from 2023-08-21 20-09-23](https://github.com/cypherbb/pes_asic_class/assets/107348780/44e729f9-744e-4cdc-8e54-56518624cc18)
+
+
    
 ## Assembly code of sum1ton.c
-Run the code and check is ouput file is generated or not.<br>
-(view the code to complie sum1ton.c in risc-v  complier above)<br>
-![D1_23_L2_code](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/23ea33f9-39dd-452e-b0fe-804f1dfe12dd)
-To view the assembly code of sumNn.c 
+
+To view the assembly code of sum1ton.c 
 ```
-riscv64-unknown-elf-objdump -d sum1ton.o| less
+riscv64-unknown-elf-objdump -d sum1ton.o | less
 ```
 Since we have written our code in 'int main()'<br>
 Search main by typing
@@ -118,23 +118,21 @@ Search main by typing
 /main
 ```
 Press 'n' so that the address where the main file is present.
-![less_main_no_instru](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/09db068c-ad45-4f1e-aac7-9a308f46603d)
-<br>
+![Screenshot from 2023-08-21 20-20-13](https://github.com/cypherbb/pes_asic_class/assets/107348780/9308abe2-34db-4247-ba15-96b3648e7113)
+
 To find the number of instructions in main file.
 To find the number of instructions<br>
 * **((Last address + 4) - initial address) / 4**
 * Using **-O1** to compile.
-  ![D1_23_L2_gen_of_op_file](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/e41bb0e1-02f7-43ff-82ca-1e9a63f0e0e0)
+  
 
-  ![less_no_instru](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/9c2a0fda-ed31-45b5-bb02-50f70bdd173f)
+
   ![less_no_instru_dec](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/ff0f901b-d268-48b1-9bab-ea84dd065a03)
   <br>
   Got **11** instructions.
 * Usig **-Ofast** to compile.
-  ![D1_23_L2_code](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/91ceaaf0-461b-4405-bb18-ea119292ed11)
-  ![fast_no_instru_hexa](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/b84020a8-5e1a-47ac-be8b-35e1defecb3f)
-  ![fast_no_instru_dec](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/4047f7f8-71f3-4dcb-9e9f-b06db83e8748)
-  <br>
+  ![Screenshot from 2023-08-21 20-24-18](https://github.com/cypherbb/pes_asic_class/assets/107348780/d6254103-9bff-4812-ae91-a6b4e522b385)
+
   Got **11** instructions.
 
 ## Spike Simulations and Debug
@@ -162,8 +160,8 @@ reg 0 sp
 ```
 'sp' register will be updated with addi command.<br>
 The object dump file
-![obj_dump](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/33db1008-ce14-4db4-9a71-899d5d50777c)
-![D1_23_L3_code](https://github.com/vamsi-2312/pes_asic_class/assets/142248038/fe04100a-cdac-4134-9719-9756b6471258)
+![Screenshot from 2023-08-21 20-27-50](https://github.com/cypherbb/pes_asic_class/assets/107348780/0cb828b8-fdcc-4b9b-9500-32862a27a3ae)
+
 <br>
 **lui** - load upper immediate
 **lui a0, %hi(.LC1)**<br>
