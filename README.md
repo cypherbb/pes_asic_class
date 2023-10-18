@@ -30,7 +30,7 @@ https://github.com/kunalg123/riscv_workshop_collaterals/blob/master/run.sh
 * ABI function calls
 * Running C program on RISC-V CPU
 
-### Day 3
+### RTL design using Verilog with SKY130 Technology
 *
 
 ## Course
